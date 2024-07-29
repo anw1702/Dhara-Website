@@ -1,7 +1,8 @@
 <script lang="ts">
+	import Inner from './IconWrapper/Inner.svelte';
 	import Building from '@/img/building.svelte';
 	import TruckKun from '@/img/truck-kun.svelte';
-	import IconWrapper from '@/components/blocks/IconWrapper.svelte';
+	import IconWrapper from '@/components/blocks/IconWrapper/IconWrapper.svelte';
 	import leftGif from '@/img/b3151c0a6afdefc2137c73255408a557-ezgif.com-crop.gif';
 	import rightGif from '@/img/111abeed6207fb60b16fc333a023d217-ezgif.com-crop.gif';
 	import MobileRight from '@/img/mobile-right.svelte';
@@ -15,8 +16,10 @@
 
 <section class="relative mx-auto px-4 py-8">
 	<div class="flex justify-between">
-		<IconWrapper>
-			<Cart />
+		<IconWrapper class="lg:hidden">
+			<Inner>
+				<Cart />
+			</Inner>
 		</IconWrapper>
 
 		<h1
@@ -24,8 +27,10 @@
 		>
 			Deep Financing Tokens
 		</h1>
-		<IconWrapper>
-			<Shop />
+		<IconWrapper class="lg:hidden">
+			<Inner>
+				<Shop />
+			</Inner>
 		</IconWrapper>
 	</div>
 
@@ -83,23 +88,31 @@
 		<!-- Desktop View -->
 		<div>
 			<div class="mb-10 flex justify-between">
-				<IconWrapper class="size-12" mobile={false}>
-					<Cart width="fit" height="fit" />
+				<IconWrapper class="hidden p-3 lg:block">
+					<Inner class="size-12">
+						<Cart width="fit" height="fit" />
+					</Inner>
 				</IconWrapper>
-				<IconWrapper class="size-12" mobile={false}>
-					<Shop width="fit" height="fit" />
+				<IconWrapper class="hidden p-3 lg:block">
+					<Inner class="size-12">
+						<Shop width="fit" height="fit" />
+					</Inner>
 				</IconWrapper>
 			</div>
-			<div class="mx-auto hidden px-24 lg:block">
+			<div class="mx-auto hidden lg:block">
 				<PhoneBig />
 			</div>
 			<div class="relative mt-10 flex">
-				<IconWrapper class="size-12" mobile={false}>
-					<Building width="fit" height="fit" />
+				<IconWrapper class="hidden p-3 lg:block">
+					<Inner class="size-12">
+						<Building width="fit" height="fit" />
+					</Inner>
 				</IconWrapper>
-				<span class="absolute bottom-80 right-20">
-					<IconWrapper class="size-12" mobile={false}>
-						<TruckKun width="fit" height="fit" />
+				<span class="m:hidden absolute bottom-80 lg:right-3 xl:right-20">
+					<IconWrapper class="hidden p-3 lg:block">
+						<Inner class="size-12">
+							<TruckKun width="fit" height="fit" />
+						</Inner>
 					</IconWrapper>
 				</span>
 			</div>
@@ -107,11 +120,15 @@
 		<!-- End of Desktop View -->
 		<!-- Mobile view -->
 		<div class="flex justify-between px-12">
-			<IconWrapper>
-				<Building />
+			<IconWrapper class="lg:hidden">
+				<Inner>
+					<Building />
+				</Inner>
 			</IconWrapper>
-			<IconWrapper>
-				<TruckKun />
+			<IconWrapper class="lg:hidden">
+				<Inner>
+					<TruckKun />
+				</Inner>
 			</IconWrapper>
 		</div>
 		<!-- End of Mobile view -->

@@ -1,4 +1,5 @@
 <script lang="ts">
+	import SolutionHighlight from '../lib/components/blocks/SolutionHighlight.svelte';
 	import SupplyChainBreakthrough from '@/components/blocks/SupplyChainBreakthrough.svelte';
 	import DFTFeaturesOverview from '@/components/blocks/DFTFeaturesOverview.svelte';
 	import MainHeaderSection from '@/components/blocks/MainHeaderSection.svelte';
@@ -57,6 +58,7 @@
 <MainHeaderSection />
 <SupplyChainBreakthrough />
 <DFTFeaturesOverview />
+<SolutionHighlight />
 <DftFeaturesCont />
 <Faq />
 <Footer />
