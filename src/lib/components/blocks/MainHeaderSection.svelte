@@ -99,16 +99,16 @@
 					</Inner>
 				</IconWrapper>
 			</div>
-			<div class="mx-auto hidden lg:block">
+			<div class="mx-auto hidden w-fit lg:block">
 				<PhoneBig />
 			</div>
-			<div class="relative mt-10 flex">
+			<div class="relative mt-10 flex justify-between">
 				<IconWrapper class="hidden p-3 lg:block">
 					<Inner class="size-12">
 						<Building width="fit" height="fit" />
 					</Inner>
 				</IconWrapper>
-				<span class="m:hidden absolute bottom-80 lg:right-3 xl:right-20">
+				<span class="bottom-80 xl:absolute xl:right-16">
 					<IconWrapper class="hidden p-3 lg:block">
 						<Inner class="size-12">
 							<TruckKun width="fit" height="fit" />
