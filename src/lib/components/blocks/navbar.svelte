@@ -21,13 +21,13 @@
 </script>
 
 <nav class="fixed start-0 top-0 z-20 w-full bg-white dark:border-gray-600 dark:bg-gray-900">
-	<div class="mx-auto flex max-w-screen-2xl flex-wrap items-center justify-between p-8 mr-10 ml-10">
+	<div class="mx-auto ml-10 mr-10 flex max-w-screen-2xl flex-wrap items-center justify-between p-8">
 		<a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
 			<span class="size-6">
 				<Dhara />
 			</span>
 			<span
-				class="text-dharateal dark:text-dharateal self-center whitespace-nowrap text-2xl font-semibold"
+				class="self-center whitespace-nowrap text-2xl font-semibold text-dharateal dark:text-dharateal"
 				>Dhara</span
 			>
 		</a>
@@ -60,15 +60,15 @@
 						<a
 							href={item.toLowerCase().split(' ').join('-')}
 							class={isActive(item)
-								? 'bg-dharateal md:text-dharateal md:dark:text-dharateal block rounded px-3 py-2 text-white md:bg-transparent md:p-0'
-								: 'md:hover:text-dharateal md:dark:hover:text-dharateal block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:p-0 md:hover:bg-transparent md:dark:hover:bg-transparent'}
+								? 'block rounded bg-dharateal px-3 py-2 text-white md:bg-transparent md:p-0 md:text-dharateal md:dark:text-dharateal'
+								: 'block rounded px-3 py-2 text-gray-900 hover:bg-gray-100 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:p-0 md:hover:bg-transparent md:hover:text-dharateal md:dark:hover:bg-transparent md:dark:hover:text-dharateal'}
 							>{item}</a
 						>
 					</li>
 				{/each}
 				<button
 					type="button"
-					class="bg-dharateal hover:bg-dharateal focus:ring-dharateal dark:bg-dharateal dark:hover:bg-dharateal dark:focus:ring-dharateal mx-auto flex w-full items-center justify-center space-x-2 rounded-lg px-4 py-2 text-center text-sm font-medium text-white focus:outline-none focus:ring-4 md:w-fit"
+					class="mx-auto flex w-full items-center justify-center space-x-2 rounded-lg bg-dharateal px-4 py-2 text-center text-sm font-medium text-white hover:bg-dharateal focus:outline-none focus:ring-4 focus:ring-dharateal dark:bg-dharateal dark:hover:bg-dharateal dark:focus:ring-dharateal md:w-fit"
 				>
 					Get the App <span class="pl-2"><Download size={18} /></span>
 				</button>

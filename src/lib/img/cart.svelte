@@ -4,7 +4,7 @@
 	export let stroke = '#F9942F';
 </script>
 
-<svg {width} {height} viewBox="0 0 {width} {height}" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg {width} {height} viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 	<path
 		d="M5.5 10.5L10.9501 10.0458C12.6554 9.90375 13.0382 9.53125 13.2272 7.83056L13.625 4.25"
 		{stroke}
