@@ -1,9 +1,18 @@
 <script lang="ts">
+	import DarkModeSwitch from './DarkModeSwitch.svelte';
+
 	import { page } from '$app/stores';
 	import { Download, Menu, X } from 'lucide-svelte';
 	import Dhara from '$lib/img/Dhara.svelte';
 	import { navItems } from '@/index';
 	let navOpen = false;
+	// Code for DarkMode Switch
+	import Sun from 'lucide-svelte/icons/sun';
+	import Moon from 'lucide-svelte/icons/moon';
+
+	import { resetMode, setMode } from 'mode-watcher';
+	import * as DropdownMenu from '$lib/components/ui/dropdown-menu/index.js';
+	import { Button } from '$lib/components/ui/button/index.js';
 
 	// Reactive statement to determine if the current route matches the item
 	$: isActive = (item: string) => {
@@ -21,7 +30,9 @@
 </script>
 
 <nav class="fixed start-0 top-0 z-20 w-full bg-white dark:border-gray-600 dark:bg-gray-900">
-	<div class="mx-auto flex max-w-screen-2xl flex-wrap items-center justify-between p-8 mr-4 ml-4 lg:mr-10 lg:ml-10">
+	<div
+		class="mx-auto ml-4 mr-4 flex max-w-screen-2xl flex-wrap items-center justify-between p-8 lg:ml-10 lg:mr-10"
+	>
 		<a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
 			<span class="size-6">
 				<Dhara />
@@ -72,6 +83,7 @@
 				>
 					Get the App <span class="pl-2"><Download size={18} /></span>
 				</button>
+				<DarkModeSwitch />
 			</ul>
 		</div>
 	</div>
