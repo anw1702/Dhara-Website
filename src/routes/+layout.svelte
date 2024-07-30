@@ -5,6 +5,6 @@
 </script>
 
 <Navbar />
-<div class="mt-20">
+<div class="mt-20 md:mt-28">
 	<slot></slot>
 </div>

@@ -1,7 +1,8 @@
 <script lang="ts">
+	import Inner from './IconWrapper/Inner.svelte';
 	import Building from '@/img/building.svelte';
 	import TruckKun from '@/img/truck-kun.svelte';
-	import IconWrapper from '@/components/blocks/IconWrapper.svelte';
+	import IconWrapper from '@/components/blocks/IconWrapper/IconWrapper.svelte';
 	import leftGif from '@/img/b3151c0a6afdefc2137c73255408a557-ezgif.com-crop.gif';
 	import rightGif from '@/img/111abeed6207fb60b16fc333a023d217-ezgif.com-crop.gif';
 	import MobileRight from '@/img/mobile-right.svelte';
@@ -15,8 +16,10 @@
 
 <section class="relative mx-auto px-4 py-8">
 	<div class="flex justify-between">
-		<IconWrapper>
-			<Cart />
+		<IconWrapper class="lg:hidden">
+			<Inner>
+				<Cart />
+			</Inner>
 		</IconWrapper>
 
 		<h1
@@ -24,14 +27,16 @@
 		>
 			Deep Financing Tokens
 		</h1>
-		<IconWrapper>
-			<Shop />
+		<IconWrapper class="lg:hidden">
+			<Inner>
+				<Shop />
+			</Inner>
 		</IconWrapper>
 	</div>
 
 	<div class="mb-4">
 		<p
-			class="text-dharateal mx-auto mb-4 text-center text-2xl md:text-3xl lg:mt-8 lg:text-6xl lg:text-gray-500"
+			class="mx-auto mb-4 text-center text-2xl text-dharateal md:text-3xl lg:mt-8 lg:text-6xl lg:text-gray-500"
 		>
 			A Fintech Innovation
 		</p>
@@ -52,7 +57,7 @@
 
 			<div class="mx-auto mt-8 flex items-center justify-center space-x-3 xs:mt-12 lg:mt-8">
 				<button
-					class="bg-dharateal hover:bg-dharateal focus:ring-dharateal dark:bg-dharateal dark:hover:bg-dharateal dark:focus:ring-dharateal flex w-fit items-center rounded-lg p-2 text-center text-xs font-medium text-white focus:outline-none focus:ring-4 lg:p-3 lg:text-base"
+					class="flex w-fit items-center rounded-lg bg-dharateal p-2 text-center text-xs font-medium text-white hover:bg-dharateal focus:outline-none focus:ring-4 focus:ring-dharateal dark:bg-dharateal dark:hover:bg-dharateal dark:focus:ring-dharateal lg:p-3 lg:text-base"
 				>
 					Book a Demo
 				</button>
@@ -61,7 +66,7 @@
 					class="mx-3 flex items-center justify-center space-x-2 rounded-lg bg-white px-4 py-2"
 				>
 					How it works
-					<span class="bg-dharateal ml-2 rounded-full p-1">
+					<span class="ml-2 rounded-full bg-dharateal p-1">
 						<Play class="fill-white" strokeWidth={1} size={12} absoluteStrokeWidth={true} />
 					</span>
 				</button>
@@ -80,16 +85,52 @@
 		<span class="mx-auto lg:hidden">
 			<PhoneSmall />
 		</span>
-		<span class="mx-auto hidden lg:block">
-			<PhoneBig />
-		</span>
+		<!-- Desktop View -->
+		<div>
+			<div class="mb-10 flex justify-between">
+				<IconWrapper class="hidden p-3 lg:block">
+					<Inner class="size-12">
+						<Cart width="fit" height="fit" />
+					</Inner>
+				</IconWrapper>
+				<IconWrapper class="hidden p-3 lg:block">
+					<Inner class="size-12">
+						<Shop width="fit" height="fit" />
+					</Inner>
+				</IconWrapper>
+			</div>
+			<div class="mx-auto hidden w-fit lg:block">
+				<PhoneBig />
+			</div>
+			<div class="relative mt-10 flex justify-between">
+				<IconWrapper class="hidden p-3 lg:block">
+					<Inner class="size-12">
+						<Building width="fit" height="fit" />
+					</Inner>
+				</IconWrapper>
+				<span class="bottom-80 xl:absolute xl:right-16">
+					<IconWrapper class="hidden p-3 lg:block">
+						<Inner class="size-12">
+							<TruckKun width="fit" height="fit" />
+						</Inner>
+					</IconWrapper>
+				</span>
+			</div>
+		</div>
+		<!-- End of Desktop View -->
+		<!-- Mobile view -->
 		<div class="flex justify-between px-12">
-			<IconWrapper>
-				<Building />
+			<IconWrapper class="lg:hidden">
+				<Inner>
+					<Building />
+				</Inner>
 			</IconWrapper>
-			<IconWrapper>
-				<TruckKun />
+			<IconWrapper class="lg:hidden">
+				<Inner>
+					<TruckKun />
+				</Inner>
 			</IconWrapper>
 		</div>
+		<!-- End of Mobile view -->
 	</div>
 </section>

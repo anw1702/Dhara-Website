@@ -1,13 +1,13 @@
 <script lang="ts">
 	// Your TypeScript code goes here
-	// export let width: 'fit' | number = 388;
-	// export let height: 'fit' | number = 230;
+	export let width: 'fit' | number = 1000;
+	export let height: 'fit' | number = 436;
 </script>
 
 <svg
-	width="1000"
-	height="436"
-	viewBox="0 0 1000 436"
+	{width}
+	{height}
+	viewBox="0 0 {width} {height}"
 	fill="none"
 	xmlns="http://www.w3.org/2000/svg"
 	xmlns:xlink="http://www.w3.org/1999/xlink"

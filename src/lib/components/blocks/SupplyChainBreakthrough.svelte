@@ -6,7 +6,7 @@
 	import Bar from '@/img/bar.svelte';
 	import Dom from '@/img/dom.svelte';
 	import Store from '@/img/store.svelte';
-	import * as Carousel from '$lib/components/ui/carousel/index.js';
+	import * as Carousel from '@/components/ui/carousel/index.js';
 
 	const content = [
 		{
@@ -43,9 +43,9 @@
 <!-- Bottleneck section -->
 <section class="overflow-hidden px-20 py-10 max-md:px-10">
 	<button
-		class="mx-auto flex w-fit justify-center space-x-3 rounded-md border border-dharateal p-2 uppercase"
+		class="group mx-auto flex w-fit justify-center space-x-3 rounded-md border border-dharateal p-2 uppercase hover:bg-dharateal hover:text-white"
 	>
-		<Info class="text-dharateal" />
+		<Info class="text-dharateal group-hover:text-white" />
 		<p>problems</p>
 	</button>
 	<h2
