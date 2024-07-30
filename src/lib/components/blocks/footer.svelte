@@ -12,7 +12,7 @@
 	<div class="container grid grid-cols-2 gap-1 md:grid-cols-3">
 		<div class="text-left">
 			<div class="flex flex-col items-start">
-				<p class="mb-4 max-w-32 text-base md:max-w-56 md:text-xl">
+				<p class="mb-4 text-base md:text-xl">
 					Transform your Supply Chain Finance with Programmable Digital Assets.
 				</p>
 				<button
@@ -34,7 +34,7 @@
 				{/each}
 			</nav>
 		</div>
-		<div class="col-span-2 mt-10 text-left md:col-span-1 md:block md:text-right">
+		<div class="col-span-2 text-left md:col-span-1 md:block md:text-right">
 			<p class="mb-4 text-xl md:text-left">
 				Stay updated with the latest updates on deep finance tokenization.
 			</p>
@@ -57,31 +57,25 @@
 	</div>
 
 	<div class="container mx-auto mt-10 flex flex-col items-center md:flex-row md:justify-between">
-		<div class="mb-4 flex flex-col items-center md:mb-0 md:items-start">
-			<p class="text-center text-sm font-medium md:text-left">Follow us on social media:</p>
-			<div class="mt-2 flex justify-center space-x-4 md:justify-start">
+		<div class="flex flex-col mb-4 md:mb-0">
+			<p class="text-sm font-medium">Follow us on social media:</p>
+			<div class="mt-2 flex items-center space-x-4">
 				<!-- Social Media Icons -->
-				<a href="#twitter" class="text-gray-600 hover:text-dharateal">
-					<span class="inline-flex h-6 w-6 items-center justify-center">
-						<Twitter />
-					</span>
+				<a href="/TwitterRoute" class="hover:text-dharateal text-gray-600">
+					<Twitter />
 				</a>
-				<a href="#linkedin" class="text-gray-600 hover:text-dharateal">
-					<span class="inline-flex h-6 w-6 items-center justify-center">
-						<Linkedin />
-					</span>
+				<a href="/LinkedInRoute" class="hover:text-dharateal text-gray-600">
+					<Linkedin />
 				</a>
-				<a href="#insta" class="text-gray-600 hover:text-dharateal">
-					<span class="inline-flex h-6 w-6 items-center justify-center">
-						<Instagram />
-					</span>
+				<a href="/InstaRoute" class="hover:text-dharateal text-gray-600">
+					<Instagram />
 				</a>
 			</div>
 		</div>
-		<nav class="flex space-x-4 text-center md:text-left">
-			<a href="/terms" class="text-gray-800 hover:text-dharateal">Terms of Use</a>
-			<a href="/privacy" class="text-gray-800 hover:text-dharateal">Privacy Policy</a>
-			<a href="/contact-us" class="text-gray-800 hover:text-dharateal">Contact Us</a>
+		<nav class="flex space-x-4">
+			<a href= "/terms" class="hover:text-dharateal text-gray-800">Terms of Use</a>
+			<a href="/privacy" class="hover:text-dharateal text-gray-800">Privacy Policy</a>
+			<a href="/contact-us" class="hover:text-dharateal text-gray-800">Contact Us</a>
 		</nav>
 	</div>
 </footer>
