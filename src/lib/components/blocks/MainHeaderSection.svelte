@@ -42,9 +42,9 @@
 		</p>
 	</div>
 
-	<div class="flex justify-center">
-		<div class="mr-4 w-1/2">
-			<img src={leftGif} alt="GIF 1" class="relative hidden w-full lg:mt-16 lg:block" />
+	<div class="flex justify-center relative">
+		<div class="relative w-1/2">
+			<img src={leftGif} alt="GIF 1" class="hidden w-full lg:block lg:mt-16" />
 		</div>
 		<div class="absolute left-0 h-fit lg:hidden">
 			<MobileLeft />
@@ -76,45 +76,48 @@
 		<div class="absolute right-0 h-fit lg:hidden">
 			<MobileRight />
 		</div>
-		<div class="ml-4 w-1/2">
-			<img src={rightGif} alt="GIF 2" class="relative hidden w-full lg:mt-16 lg:block" />
+		<div class="relative w-1/2">
+			<img src={rightGif} alt="GIF 2" class="hidden w-full lg:block lg:mt-16" />
 		</div>
 	</div>
 	<!-- Phone Section -->
-	<div class="mx-auto my-2 flex flex-col justify-center space-y-5 lg:my-16">
+	<div class="relative mx-auto my-2 flex flex-col justify-center space-y-5 lg:my-16">
 		<span class="mx-auto lg:hidden">
 			<PhoneSmall />
 		</span>
 		<!-- Desktop View -->
-		<div>
-			<div class="mb-10 flex justify-between">
-				<IconWrapper class="hidden p-3 lg:block">
-					<Inner class="size-12">
-						<Cart width="fit" height="fit" />
-					</Inner>
-				</IconWrapper>
-				<IconWrapper class="hidden p-3 lg:block">
-					<Inner class="size-12">
-						<Shop width="fit" height="fit" />
-					</Inner>
-				</IconWrapper>
-			</div>
-			<div class="mx-auto hidden w-fit lg:block">
+		<div class="relative mx-auto w-fit lg:block">
+			<div class="relative">
 				<PhoneBig />
-			</div>
-			<div class="relative mt-10 flex justify-between">
-				<IconWrapper class="hidden p-3 lg:block">
-					<Inner class="size-12">
-						<Building width="fit" height="fit" />
-					</Inner>
-				</IconWrapper>
-				<span class="bottom-80 xl:absolute xl:right-16">
-					<IconWrapper class="hidden p-3 lg:block">
-						<Inner class="size-12">
-							<TruckKun width="fit" height="fit" />
+				<!-- Added Icons for Desktop View -->
+				<div class="absolute top-0 left-0 mt-[-50px] ml-[-80px] hidden lg:block">
+					<IconWrapper class="size-14">
+						<Inner class="size-10">
+							<Cart />
 						</Inner>
 					</IconWrapper>
-				</span>
+				</div>
+				<div class="absolute top-0 right-0 mt-[-50px] mr-[-80px] hidden lg:block">
+					<IconWrapper class="size-14">
+						<Inner class="size-10">
+							<Shop />
+						</Inner>
+					</IconWrapper>
+				</div>
+				<div class="absolute bottom-0 left-05 mb-[-50px] ml-[-80px] hidden lg:block">
+					<IconWrapper class="size-14">
+						<Inner class="size-10">
+							<Building />
+						</Inner>
+					</IconWrapper>
+				</div>
+				<div class="absolute bottom-0 right-0 mb-[-50px] mr-[-80px] hidden lg:block">
+					<IconWrapper class="size-14">
+						<Inner class="size-10">
+							<TruckKun />
+						</Inner>
+					</IconWrapper>
+				</div>
 			</div>
 		</div>
 		<!-- End of Desktop View -->

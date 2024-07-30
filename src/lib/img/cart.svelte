@@ -1,6 +1,6 @@
 <script lang="ts">
-	export let width: 'fit' | number = 16;
-	export let height: 'fit' | number = 16;
+	export let width: 'fit' | number = 30;
+	export let height: 'fit' | number = 30;
 	export let stroke = '#F9942F';
 </script>
 

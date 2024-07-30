@@ -6,7 +6,7 @@
 </script>
 
 <section>
-	<div class="bg-white p-8">
+	<div class="bg-white p-8 pt-20">
 		<div class="flex flex-col items-center justify-between lg:flex-row lg:px-12">
 			<div class="lg:max-w-lg">
 				<h1 class="mb-4 text-2xl font-semibold text-gray-700 lg:text-4xl lg:leading-normal">
