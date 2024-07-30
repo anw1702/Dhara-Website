@@ -2,9 +2,15 @@
     // Import any necessary components or utilities here
   </script>
   
+<<<<<<< HEAD
   <section class="flex min-h-screen flex-col justify-center py-6 sm:py-12">
     <div class="font-lexend relative mx-auto max-w-screen-xl bg-white px-4 py-6 sm:rounded-3xl sm:p-8 shadow-xl border border-gray-200">
       <h2 class="mb-4 text-center text-4xl font-bold">Terms of Use</h2>
+=======
+  <main class="flex min-h-screen flex-col justify-center py-6 sm:py-12">
+    <div class="font-lexend relative mx-auto max-w-screen-xl bg-white px-4 py-6 sm:rounded-3xl sm:p-8 shadow-xl border border-gray-200">
+      <h1 class="mb-4 text-center text-4xl font-bold">Terms of Use</h1>
+>>>>>>> f6150333d8f7018dc0bc0627575a6c73f8219705
       <div class="mb-12"></div>
         <section class="text-center">
           <!-- General Terms -->
@@ -72,5 +78,9 @@
           </div>
         </section>
     </div>
+<<<<<<< HEAD
   </section>
+=======
+</main>
+>>>>>>> f6150333d8f7018dc0bc0627575a6c73f8219705
   

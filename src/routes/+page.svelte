@@ -7,7 +7,10 @@
 	import Footer from '@/components/blocks/footer.svelte';
 	import Scroller from '@/components/blocks/scroller.svelte';
 	import Faq from '@/components/blocks/FAQ.svelte';
+<<<<<<< HEAD
 	import IntroDft from '@/components/blocks/IntroDFT.svelte';
+=======
+>>>>>>> f6150333d8f7018dc0bc0627575a6c73f8219705
 </script>
 
 <svelte:head>
@@ -58,7 +61,10 @@
 
 <MainHeaderSection />
 <SupplyChainBreakthrough />
+<<<<<<< HEAD
 <IntroDft />
+=======
+>>>>>>> f6150333d8f7018dc0bc0627575a6c73f8219705
 <DFTFeaturesOverview />
 <SolutionHighlight />
 <DftFeaturesCont />

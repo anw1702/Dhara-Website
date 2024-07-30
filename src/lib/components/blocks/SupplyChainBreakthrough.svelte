@@ -49,7 +49,11 @@
 		<p>problems</p>
 	</button>
 	<h2
+<<<<<<< HEAD
 		class="mx-auto max-w-lg py-3 text-center text-4xl tracking-normal lg:mx-0 lg:max-w-lg lg:text-left lg:text-4xl"
+=======
+		class="mx-auto max-w-lg py-3 text-center text-3xl tracking-tight lg:mx-0 lg:max-w-md lg:text-left lg:text-4xl"
+>>>>>>> f6150333d8f7018dc0bc0627575a6c73f8219705
 	>
 		The Bottleneck in Traditional Supply Chain Finance
 	</h2>
