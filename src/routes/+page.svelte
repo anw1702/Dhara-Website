@@ -8,7 +8,6 @@
 	import Scroller from '@/components/blocks/scroller.svelte';
 	import Faq from '@/components/blocks/FAQ.svelte';
 	import IntroDft from '@/components/blocks/IntroDFT.svelte';
-	import Convo from '@/img/convo.svelte';
 </script>
 
 <svelte:head>
@@ -63,9 +62,6 @@
 <DFTFeaturesOverview />
 <SolutionHighlight />
 <DftFeaturesCont />
-<div class="mx-auto flex items-center justify-center">
-	<Convo />
-</div>
 <Faq />
 <Footer />
 <Scroller />

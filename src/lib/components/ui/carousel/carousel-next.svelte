@@ -31,6 +31,6 @@
 	on:keydown={handleKeyDown}
 	{...$$restProps}
 >
-	<MoveRight class="size-6 text-green-900" />
+	<MoveRight class="size-6 text-green-900 dark:text-green-400" />
 	<span class="sr-only">Next slide</span>
 </Button>

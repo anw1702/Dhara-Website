@@ -6,13 +6,6 @@
 	import Dhara from '$lib/img/Dhara.svelte';
 	import { navItems } from '@/index';
 	let navOpen = false;
-	// Code for DarkMode Switch
-	import Sun from 'lucide-svelte/icons/sun';
-	import Moon from 'lucide-svelte/icons/moon';
-
-	import { resetMode, setMode } from 'mode-watcher';
-	import * as DropdownMenu from '$lib/components/ui/dropdown-menu/index.js';
-	import { Button } from '$lib/components/ui/button/index.js';
 
 	// Reactive statement to determine if the current route matches the item
 	$: isActive = (item: string) => {
@@ -46,7 +39,7 @@
 			<button
 				data-collapse-toggle="navbar-sticky"
 				type="button"
-				class="inline-flex h-10 w-10 items-center justify-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden"
+				class="order-1 inline-flex h-10 w-10 items-center justify-center rounded-lg p-2 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600 md:hidden"
 				aria-controls="navbar-sticky"
 				aria-expanded="false"
 				on:click={() => (navOpen = !navOpen)}
@@ -58,6 +51,9 @@
 				{/if}
 				<span class="sr-only">Open main menu</span>
 			</button>
+			<div class="block lg:hidden">
+				<DarkModeSwitch />
+			</div>
 		</div>
 		<div
 			class={`w-full items-center justify-between md:order-2 md:flex md:w-auto ${navOpen ? '' : 'hidden'}`}
@@ -83,7 +79,9 @@
 				>
 					Get the App <span class="pl-2"><Download size={18} /></span>
 				</button>
-				<DarkModeSwitch />
+				<div class="hidden lg:block">
+					<DarkModeSwitch />
+				</div>
 			</ul>
 		</div>
 	</div>

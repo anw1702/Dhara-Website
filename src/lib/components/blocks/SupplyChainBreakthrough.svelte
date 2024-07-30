@@ -99,8 +99,12 @@
 					</Carousel.Item>
 				{/each}
 			</Carousel.Content>
-			<Carousel.Previous class="absolute left-[80vw] top-0 rounded-md border border-green-800" />
-			<Carousel.Next class="absolute left-[83vw] top-0 rounded-md border border-green-800" />
+			<Carousel.Previous
+				class="absolute -top-10 left-[80vw] rounded-md border border-green-800 dark:border-green-300"
+			/>
+			<Carousel.Next
+				class="absolute -top-10 left-[83vw] rounded-md border border-green-800 dark:border-green-300"
+			/>
 		</Carousel.Root>
 	</div>
 </section>

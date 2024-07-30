@@ -42,9 +42,9 @@
 		</p>
 	</div>
 
-	<div class="flex justify-center relative">
+	<div class="relative flex justify-center">
 		<div class="relative w-1/2">
-			<img src={leftGif} alt="GIF 1" class="hidden w-full lg:block lg:mt-16" />
+			<img src={leftGif} alt="GIF 1" class="hidden w-full lg:mt-16 lg:block" />
 		</div>
 		<div class="absolute left-0 h-fit lg:hidden">
 			<MobileLeft />
@@ -77,41 +77,41 @@
 			<MobileRight />
 		</div>
 		<div class="relative w-1/2">
-			<img src={rightGif} alt="GIF 2" class="hidden w-full lg:block lg:mt-16" />
+			<img src={rightGif} alt="GIF 2" class="hidden w-full lg:mt-16 lg:block" />
 		</div>
 	</div>
 	<!-- Phone Section -->
-	<div class="relative mx-auto my-2 flex flex-col justify-center space-y-5 lg:my-16">
+	<div class="relative mx-auto my-5 flex flex-col justify-center space-y-5 lg:my-16">
 		<span class="mx-auto lg:hidden">
 			<PhoneSmall />
 		</span>
 		<!-- Desktop View -->
-		<div class="relative mx-auto w-fit lg:block">
+		<div class="relative mx-auto hidden w-fit lg:block">
 			<div class="relative">
 				<PhoneBig />
 				<!-- Added Icons for Desktop View -->
-				<div class="absolute top-0 left-0 mt-[-50px] ml-[-80px] hidden lg:block">
+				<div class="absolute left-0 top-0 ml-[-80px] mt-[-50px] hidden lg:block">
 					<IconWrapper class="size-14">
 						<Inner class="size-10">
 							<Cart />
 						</Inner>
 					</IconWrapper>
 				</div>
-				<div class="absolute top-0 right-0 mt-[-50px] mr-[-80px] hidden lg:block">
+				<div class="absolute right-0 top-0 mr-[-80px] mt-[-50px] hidden xl:block">
 					<IconWrapper class="size-14">
 						<Inner class="size-10">
 							<Shop />
 						</Inner>
 					</IconWrapper>
 				</div>
-				<div class="absolute bottom-0 left-05 mb-[-50px] ml-[-80px] hidden lg:block">
+				<div class="left-05 absolute bottom-0 mb-[-50px] ml-[-80px] hidden lg:block">
 					<IconWrapper class="size-14">
 						<Inner class="size-10">
 							<Building />
 						</Inner>
 					</IconWrapper>
 				</div>
-				<div class="absolute bottom-0 right-0 mb-[-50px] mr-[-80px] hidden lg:block">
+				<div class="absolute bottom-36 right-0 mb-[-50px] mr-[-80px] hidden xl:block">
 					<IconWrapper class="size-14">
 						<Inner class="size-10">
 							<TruckKun />
