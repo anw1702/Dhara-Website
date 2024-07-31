@@ -1,6 +1,10 @@
 <script lang="ts">
 	import DFTFeature from './IntroDFTFeature.svelte';
 	import BackgroundLines from './BackgroundLines.svelte';
+	import clock from '@/img/clock.svg';
+	import searchtick from '@/img/searchtick.svg';
+	import securetick from '@/img/securetick.svg';
+
 
 	interface Feature {
 		icon: string;
@@ -10,19 +14,19 @@
 
 	const features: Feature[] = [
 		{
-			icon: '/src/lib/img/clock.svg',
+			icon: [clock],
 			title: 'Immediacy',
 			description:
 				'Transactions with DFTs are processed swiftly, a stark contrast to the often-protracted procedures of conventional financing!'
 		},
 		{
-			icon: '/src/lib/img/searchtick.svg',
+			icon: [searchtick],
 			title: 'Transparency',
 			description:
 				'Each transaction is recorded on a blockchain, offering an undisputable and clear record of transactions, accessible to all relevant parties!'
 		},
 		{
-			icon: '/src/lib/img/securetick.svg',
+			icon: [securetick],
 			title: 'Security',
 			description:
 				'Leveraging the robustness of blockchain technology, DFTs provide a secure environment for financial transactions, safeguarding against tampering and fraud.'
@@ -73,4 +77,4 @@
 	</section>
 </section>
 
-<!-- style="background: linear-gradient(261deg, #05A987 2.74%, #024336 82.42%); -->
+
