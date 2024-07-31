@@ -111,7 +111,7 @@
 						</Inner>
 					</IconWrapper>
 				</div>
-				<div class="absolute bottom-36 right-0 mb-[-50px] mr-[-80px] hidden xl:block">
+				<div class="absolute bottom-36 right-0 mb-[-190px] mr-[-80px] hidden xl:block">
 					<IconWrapper class="size-14">
 						<Inner class="size-10">
 							<TruckKun />
