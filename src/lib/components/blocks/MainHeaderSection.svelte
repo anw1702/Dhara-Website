@@ -23,7 +23,7 @@
 		</IconWrapper>
 
 		<h1
-			class="mx-auto mb-4 mt-5 text-center text-2xl font-bold text-black md:text-3xl lg:mt-8 lg:text-6xl lg:text-gray-500"
+			class="mx-auto mb-4 mt-5 text-center text-2xl font-bold text-dharateal dark:text-white md:text-3xl lg:mt-8 lg:text-6xl lg:text-gray-400"
 		>
 			Deep Financing Tokens
 		</h1>
@@ -36,7 +36,7 @@
 
 	<div class="mb-4">
 		<p
-			class="mx-auto mb-4 text-center text-2xl text-dharateal md:text-3xl lg:mt-8 lg:text-6xl lg:text-gray-500"
+			class="mx-auto mb-4 text-center text-2xl text-dharateal dark:text-gray-300 md:text-3xl lg:mt-8 lg:text-6xl lg:text-gray-400"
 		>
 			A Fintech Innovation
 		</p>
@@ -57,13 +57,13 @@
 
 			<div class="mx-auto mt-8 flex items-center justify-center space-x-3 xs:mt-12 lg:mt-8">
 				<button
-					class="flex w-fit items-center rounded-lg bg-dharateal p-2 text-center text-xs font-medium text-white hover:bg-dharateal focus:outline-none focus:ring-4 focus:ring-dharateal dark:bg-dharateal dark:hover:bg-dharateal dark:focus:ring-dharateal lg:p-3 lg:text-base"
+					class="flex w-fit items-center rounded-lg bg-dharateal p-2 text-center text-xs font-medium text-white hover:bg-dharateal focus:outline-none focus:ring-4 focus:ring-dharateal dark:hover:bg-gray-600 dark:focus:ring-gray-500 lg:p-3 lg:text-base"
 				>
 					Book a Demo
 				</button>
 
 				<button
-					class="mx-3 flex items-center justify-center space-x-2 rounded-lg bg-white px-4 py-2"
+					class="mx-3 flex items-center justify-center space-x-2 rounded-lg bg-transparent px-4 py-2"
 				>
 					How it works
 					<span class="ml-2 rounded-full bg-dharateal p-1">

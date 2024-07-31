@@ -9,6 +9,8 @@
 	import ArrowSec from '@/img/arrowsec.svelte';
 	import L1 from '@/img/line1.svelte';
 	import Convo from '@/img/convo.svelte';
+	import DftMobile from '@/img/DFTMobile.svelte';
+	import DftShort from '@/img/DFTShort.svelte';
 
 	const content = [
 		{
@@ -29,13 +31,11 @@
 		},
 		{
 			heading: 'Competitive Edge in Fintech',
-			body: `Banks integrating DFT position themselves as fintech innovators,
-														enhancing their brand as leaders in technology adoption`
+			body: `Banks integrating DFT position themselves as fintech innovators,enhancing their brand as leaders in technology adoption`
 		},
 		{
 			heading: '	Compliance Efficiency',
-			body: `DFT's compliance tools aid banks in meeting regulations efficiently,
-														simplifying reporting and audits with automated transaction recording.`
+			body: `DFT's compliance tools aid banks in meeting regulations efficiently,simplifying reporting and audits with automated transaction recording.`
 		}
 	];
 </script>
@@ -54,49 +54,38 @@
 					</p>
 				</div>
 			</div>
-			<div class="ml-5 flex w-[64%] flex-col max-md:ml-0 max-md:w-full">
-				<div class="grow max-md:mt-10 max-md:max-w-full">
-					<div class="flex gap-5 max-md:flex-col">
-						<div class="flex w-[5%] flex-col max-md:ml-0 max-md:w-full">
-							<L1 />
-						</div>
-						<div class="ml-5 flex w-[83%] flex-col max-md:ml-0 max-md:w-full">
-							<div class="flex grow flex-col max-md:mt-1.5 max-md:max-w-full">
-								<div class="max-md:max-w-full">
-									<div class="flex gap-5 max-md:flex-col">
-										<div class="flex w-6/12 flex-col max-md:ml-0 max-md:w-full">
-											<div class="mt-20 flex grow flex-col items-start pb-20 max-md:mt-10">
-												{#each content as { heading, body }, i}
-													<DFTCard>
-														<svelte:fragment slot="icon">
-															{#if i == 0}
-																<Rocket />
-															{:else if i == 1}
-																<Graph />
-															{:else if i == 2}
-																<ArrowSec />
-															{:else if i == 3}
-																<Heart />
-															{:else if i == 4}
-																<Trophy />
-															{:else if i == 5}
-																<Checkbox />
-															{/if}
-														</svelte:fragment>
-														<h3 slot="heading">{heading}</h3>
-														<p slot="body">
-															{body}
-														</p>
-													</DFTCard>
-												{/each}
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+			<div class="mt-10 flex flex-col md:hidden">
+				<span class="mx-auto flex items-center justify-center">
+					<DftMobile />
+				</span>
+				{#each content as { heading, body }, i}
+					<DFTCard>
+						<svelte:fragment slot="icon">
+							{#if i == 0}
+								<Rocket />
+							{:else if i == 1}
+								<Graph />
+							{:else if i == 2}
+								<ArrowSec />
+							{:else if i == 3}
+								<Heart />
+							{:else if i == 4}
+								<Trophy />
+							{:else if i == 5}
+								<Checkbox />
+							{/if}
+						</svelte:fragment>
+						<h3 slot="heading">{heading}</h3>
+						<p slot="body">
+							{body}
+						</p>
+					</DFTCard>
+					{#if i != content.length - 1}
+						<span class="mx-auto flex items-center justify-center">
+							<DftShort />
+						</span>
+					{/if}
+				{/each}
 			</div>
 		</div>
 	</div>
