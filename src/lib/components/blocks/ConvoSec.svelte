@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Convo from '@/img/convo.svelte';
 	import CountryCodeSelector from './CountryCodeSelector.svelte';
+	import ConvoMobile from '@/img/ConvoMobile.svelte';
 
 	let fullName = '';
 	let email = '';
@@ -9,7 +10,7 @@
 </script>
 
 <!-- Convo section -->
-<section class="relative mx-auto mb-5 flex items-center justify-center">
+<section class="relative mx-auto mb-56 flex items-center justify-center">
 	<div
 		class="absolute mx-auto w-full p-6 md:left-[10%] md:top-[45%] md:mx-0 md:mr-auto md:w-[50%] md:translate-y-[-40%] md:transform"
 	>
@@ -89,8 +90,11 @@
 		</form>
 	</div>
 	<!-- End User Input Form -->
-	<div>
+	<div class="hidden lg:block">
 		<Convo />
+	</div>
+	<div class="relative right-3 top-52 -z-10 w-[90vw] lg:hidden">
+		<ConvoMobile size="fit" />
 	</div>
 </section>
 <!-- End of Convo section -->
