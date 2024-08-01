@@ -15,7 +15,7 @@
 	let detailedValue: DetailedValue | null = null;
 </script>
 
-<div class="wrapper">
+<div class="overflow-hidden">
 	<select
 		class="h-[36px] rounded-md border border-solid pl-3 pr-3 outline-none {!valid
 			? 'border-red-700'

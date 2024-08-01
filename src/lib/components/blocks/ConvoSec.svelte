@@ -10,9 +10,9 @@
 </script>
 
 <!-- Convo section -->
-<section class="relative mx-auto mb-56 flex items-center justify-center">
+<section class="relative mx-auto my-56 flex items-center justify-center">
 	<div
-		class="absolute mx-auto hidden w-full p-6 text-white dark:text-gray-200 md:left-[10%] md:top-[45%] md:mx-0 md:mr-auto md:w-[50%] md:translate-y-[-40%] md:transform lg:block"
+		class="absolute mx-auto hidden w-full p-6 text-white dark:text-gray-200 md:left-[10%] md:top-[45%] md:mx-0 md:mr-auto md:block md:w-[50%] md:translate-y-[-40%] md:transform"
 	>
 		<h1 class="w-full text-5xl font-medium leading-[58px] dark:text-white">
 			Let's have a <br />Conversation
@@ -94,15 +94,15 @@
 	<!-- End User Input Form -->
 	<!-- Text Area -->
 	<!-- End of Text Area -->
-	<div class="hidden dark:text-gray-300 lg:block">
+	<div class="hidden overflow-hidden dark:text-gray-300 md:block">
 		<Convo />
 	</div>
-	<div class="relative right-3 top-52 -z-10 w-[90vw] dark:text-gray-300 lg:hidden">
+	<div class="relative right-3 top-52 -z-10 w-[90vw] dark:text-gray-300 md:hidden">
 		<ConvoMobile size="fit" />
 	</div>
 	<!-- Mobile text -->
 	<span
-		class="absolute -bottom-40 max-w-screen-lg space-y-3 text-white dark:text-gray-400 lg:hidden"
+		class="absolute -bottom-40 left-5 max-w-screen-lg space-y-3 text-white dark:text-gray-400 md:hidden"
 	>
 		<h4 class="text-3xl dark:text-gray-300 md:text-4xl">Let’s have a Conversation</h4>
 		<h6 class="max-w-sm text-wrap text-base dark:text-gray-300">
