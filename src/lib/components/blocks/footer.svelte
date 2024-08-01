@@ -18,7 +18,7 @@
 					Transform your Supply Chain Finance with Programmable Digital Assets.
 				</p>
 				<button
-					class="hover:bg-[#048C6F flex w-fit items-center rounded bg-dharateal px-4 py-2 dark:bg-gray-700 dark:hover:bg-gray-600"
+					class="flex w-fit items-center rounded bg-dharateal px-4 py-2 text-white hover:bg-[#048C6F] dark:text-black dark:hover:bg-gray-600"
 				>
 					Request Demo
 					<ArrowUpRight class="ml-2" />
@@ -42,7 +42,7 @@
 			</p>
 			<div class="flex justify-center md:justify-end">
 				<div
-					class="flex w-full overflow-hidden rounded border border-gray-300 focus-within:ring-2 focus-within:ring-dharateal dark:border-gray-600"
+					class="flex w-full overflow-hidden rounded border border-gray-300 focus-within:ring-2 focus-within:ring-dharateal dark:border-gray-600 dark:bg-gray-700"
 				>
 					<input
 						type="email"
@@ -50,7 +50,7 @@
 						class="flex-1 px-2 py-4 focus:outline-none dark:bg-gray-700"
 					/>
 					<button
-						class="mb-2 mr-1 mt-2 rounded bg-dharateal px-2 py-2 hover:bg-[#048C6F] dark:bg-dharateal dark:text-black dark:hover:bg-[#048c6fd4]"
+						class="m-2 rounded bg-dharateal px-2 py-2 text-white hover:bg-[#048C6F] dark:bg-dharateal dark:text-black dark:hover:bg-[#048c6fd4]"
 						>Subscribe</button
 					>
 				</div>
