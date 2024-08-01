@@ -19,7 +19,7 @@
 	<select
 		class="h-[36px] rounded-md border border-solid pl-3 pr-3 outline-none {!valid
 			? 'border-red-700'
-			: ''}"
+			: ''} dark:border-gray-700 dark:bg-gray-700 dark:text-white"
 		aria-label="Default select example"
 		name="Country"
 		bind:value={country}
@@ -43,6 +43,6 @@
 		bind:value
 		bind:valid
 		bind:detailedValue
-		class="h-[32px] rounded-md pl-3 pr-3 outline-none {!valid ? 'border-red-700' : ''}"
+		class="h-[32px] pl-3 pr-3 {!valid ? 'border-red-700' : ''}  dark:bg-gray-700 dark:text-white"
 	/>
 </div>
