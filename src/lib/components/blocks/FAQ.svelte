@@ -1,4 +1,7 @@
 <script lang="ts">
+	import { ChevronDown } from 'lucide-svelte';
+	import * as Accordion from '$lib/components/ui/accordion';
+
 	let faqs = [
 		{
 			question: 'How does DFT integrate with existing financial systems?',
@@ -42,28 +45,17 @@
 			<div class="grow max-md:mt-10 max-md:max-w-full">
 				{#each faqs as { question, answer }, index}
 					<div class="mb-4">
-						<details class="group rounded-md border border-gray-200">
-							<summary
-								class="flex cursor-pointer items-center justify-between rounded-md px-4 py-2"
-							>
-								{question}
-								<svg
-									class="ml-2 h-5 w-5 transform text-gray-500 transition-transform duration-200 group-open:rotate-180"
-									fill="none"
-									stroke="currentColor"
-									viewBox="0 0 24 24"
-									xmlns="http://www.w3.org/2000/svg"
+						<Accordion.Root class="group rounded-md border border-gray-200">
+							<Accordion.Item value="item-{index}">
+								<Accordion.Trigger
+									class="flex cursor-pointer justify-between rounded-md bg-white px-4 py-2 text-left dark:bg-black"
+									>{question}</Accordion.Trigger
 								>
-									<path
-										stroke-linecap="round"
-										stroke-linejoin="round"
-										stroke-width="2"
-										d="M19 9l-7 7-7-7"
-									></path>
-								</svg>
-							</summary>
-							<p class="mt-2 bg-white p-4">{answer}</p>
-						</details>
+								<Accordion.Content class="mt-2 bg-white p-4 dark:bg-black">
+									{answer}
+								</Accordion.Content>
+							</Accordion.Item>
+						</Accordion.Root>
 					</div>
 				{/each}
 			</div>

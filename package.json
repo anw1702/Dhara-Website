@@ -38,10 +38,10 @@
   },
   "type": "module",
   "dependencies": {
-    "bits-ui": "^0.21.12",
+    "bits-ui": "^0.21.13",
     "clsx": "^2.1.1",
     "embla-carousel-svelte": "^8.1.7",
-    "lucide-svelte": "^0.417.0",
+    "lucide-svelte": "^0.419.0",
     "mode-watcher": "^0.4.1",
     "svelte-tel-input": "^3.4.1",
     "tailwind-merge": "^2.4.0",
