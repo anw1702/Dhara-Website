@@ -12,7 +12,7 @@
 <!-- Convo section -->
 <section class="relative mx-auto mb-56 flex items-center justify-center">
 	<div
-		class="absolute mx-auto hidden w-full p-6 dark:text-white md:left-[10%] md:top-[45%] md:mx-0 md:mr-auto md:w-[50%] md:translate-y-[-40%] md:transform lg:block"
+		class="absolute mx-auto hidden w-full p-6 text-white dark:text-gray-200 md:left-[10%] md:top-[45%] md:mx-0 md:mr-auto md:w-[50%] md:translate-y-[-40%] md:transform lg:block"
 	>
 		<h1 class="w-full text-5xl font-medium leading-[58px] dark:text-white">
 			Let's have a <br />Conversation
@@ -23,7 +23,7 @@
 	</div>
 	<!-- User Input Form -->
 	<div
-		class="absolute mx-auto w-full p-6 dark:bg-gray-800 md:right-0 md:top-[45%] md:mx-0 md:ml-auto md:w-[50%] md:translate-y-[-50%] md:transform"
+		class="absolute mx-auto w-full p-6 md:right-0 md:top-[45%] md:mx-0 md:ml-auto md:w-[50%] md:translate-y-[-50%] md:transform"
 	>
 		<form
 			id="contactForm"
