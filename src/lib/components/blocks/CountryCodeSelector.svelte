@@ -17,7 +17,9 @@
 
 <div class="wrapper">
 	<select
-		class="country-select {!valid ? 'invalid' : ''}"
+		class="h-[36px] rounded-md border border-solid pl-3 pr-3 outline-none {!valid
+			? 'border-red-700'
+			: ''}"
 		aria-label="Default select example"
 		name="Country"
 		bind:value={country}
@@ -41,30 +43,6 @@
 		bind:value
 		bind:valid
 		bind:detailedValue
-		class="basic-tel-input {!valid ? 'invalid' : ''}"
+		class="h-[32px] rounded-md pl-3 pr-3 outline-none {!valid ? 'border-red-700' : ''}"
 	/>
 </div>
-
-<style>
-	.wrapper :global(.basic-tel-input) {
-		height: 32px;
-		padding-left: 12px;
-		padding-right: 12px;
-		border-radius: 6px;
-		border: 1px solid;
-		outline: none;
-	}
-
-	.wrapper :global(.country-select) {
-		height: 36px;
-		padding-left: 12px;
-		padding-right: 12px;
-		border-radius: 6px;
-		border: 1px solid;
-		outline: none;
-	}
-
-	.wrapper :global(.invalid) {
-		border-color: red;
-	}
-</style>
