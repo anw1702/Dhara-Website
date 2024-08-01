@@ -1,4 +1,6 @@
 <script lang="ts">
+	import ConvoSec from '../lib/components/blocks/ConvoSec.svelte';
+
 	import SolutionHighlight from '../lib/components/blocks/SolutionHighlight.svelte';
 	import SupplyChainBreakthrough from '@/components/blocks/SupplyChainBreakthrough.svelte';
 	import DFTFeaturesOverview from '@/components/blocks/DFTFeaturesOverview.svelte';
@@ -62,6 +64,9 @@
 <DFTFeaturesOverview />
 <SolutionHighlight />
 <DftFeaturesCont />
+
+<ConvoSec />
+
 <Faq />
 <Footer />
 <Scroller />

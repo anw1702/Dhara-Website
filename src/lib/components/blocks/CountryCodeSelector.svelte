@@ -1,46 +1,70 @@
 <script lang="ts">
-	let countries = [
-		{ code: '+91', name: 'India', flag: '🇮🇳' },
-		{ code: '+1', name: 'United States', flag: '🇺🇸' },
-		{ code: '+44', name: 'United Kingdom', flag: '🇬🇧' },
-		// Add more countries as needed
-	];
-	let selectedCountry: { code: string; name: string; flag: string } = countries[0];
+	import { TelInput, normalizedCountries } from 'svelte-tel-input';
+	import type { DetailedValue, CountryCode, E164Number } from 'svelte-tel-input/types';
 
-	function handleCountryChange(event: Event) {
-		const target = event.target as HTMLSelectElement;
-		const countryCode = target.value;
-		selectedCountry = countries.find(country => country.code === countryCode) || countries[0];
-	}
+	// Any Country Code Alpha-2 (ISO 3166)
+	let country: CountryCode | null = 'IN';
+
+	// You must use E164 number format. It's guarantee the parsing and storing consistency.
+	let value: E164Number | null = '+91 98765 43210';
+
+	// Validity
+	let valid = true;
+
+	// Optional - Extended details about the parsed phone number
+	let detailedValue: DetailedValue | null = null;
 </script>
 
-<div class="relative w-22">
-	<select 
-		on:change={handleCountryChange} 
-		class="appearance-none w-full py-2 pl-3 pr-8 bg-white border border-gray-300 rounded leading-tight focus:outline-none focus:border-gray-500"
+<div class="wrapper">
+	<select
+		class="country-select {!valid ? 'invalid' : ''}"
+		aria-label="Default select example"
+		name="Country"
+		bind:value={country}
 	>
-		{#each countries as country}
-			<option value={country.code}>
-				<span class=" w-6 h-6 rounded-full border border-gray-300 mr-2 flex items-center justify-center text-xl">
-					{country.flag}
-				</span>
-				{country.code}
+		<option value={null} hidden={country !== null}>Please select</option>
+		{#each normalizedCountries as currentCountry (currentCountry.id)}
+			<option
+				value={currentCountry.iso2}
+				selected={currentCountry.iso2 === country}
+				aria-selected={currentCountry.iso2 === country}
+			>
+				{currentCountry.iso2} (+{currentCountry.dialCode})
 			</option>
 		{/each}
 	</select>
-	<div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
-		<svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M7 10l5 5 5-5H7z"/></svg>
-	</div>
+	<label for="phoneNumber" class="sr-only">Phone Number</label>
+	<TelInput
+		name="phoneNumber"
+		required
+		bind:country
+		bind:value
+		bind:valid
+		bind:detailedValue
+		class="basic-tel-input {!valid ? 'invalid' : ''}"
+	/>
 </div>
 
 <style>
-	select {
-		-webkit-appearance: none;
-		-moz-appearance: none;
-		appearance: none;
+	.wrapper :global(.basic-tel-input) {
+		height: 32px;
+		padding-left: 12px;
+		padding-right: 12px;
+		border-radius: 6px;
+		border: 1px solid;
+		outline: none;
 	}
 
-	span {
-		font-size: 1.5rem; /* Adjust the size of the emoji */
+	.wrapper :global(.country-select) {
+		height: 36px;
+		padding-left: 12px;
+		padding-right: 12px;
+		border-radius: 6px;
+		border: 1px solid;
+		outline: none;
+	}
+
+	.wrapper :global(.invalid) {
+		border-color: red;
 	}
 </style>

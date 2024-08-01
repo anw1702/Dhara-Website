@@ -41,9 +41,9 @@
 </script>
 
 <!-- Bottleneck section -->
-<section class="overflow-hidden px-20 py-10 max-md:px-10">
+<section class="max-md :px-10 overflow-hidden px-20 py-10">
 	<button
-		class="group mx-auto flex w-fit justify-center space-x-3 rounded-md border border-dharateal p-2 uppercase hover:bg-dharateal hover:text-white"
+		class="group mx-auto flex w-fit justify-center space-x-3 rounded-md border border-dharateal p-2 uppercase hover:bg-dharateal hover:text-white lg:hidden"
 	>
 		<Info class="text-dharateal group-hover:text-white" />
 		<p>problems</p>
